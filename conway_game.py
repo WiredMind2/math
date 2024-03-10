@@ -136,6 +136,7 @@ class Conway_Game:
 						self.add_shape(random_shape(), 0, 0)
 						self.draw()
 					elif event.key == pygame.K_k:
+						self.frame = 0
 						self.cells = [[False for _ in range(self.bounds[0])] for _ in range(self.bounds[1])]
 						self.draw()
 					elif event.key == pygame.K_h:
